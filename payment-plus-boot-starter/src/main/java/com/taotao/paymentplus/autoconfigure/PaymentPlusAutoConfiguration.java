@@ -60,6 +60,7 @@ public class PaymentPlusAutoConfiguration {
 	@Bean
 	public PaymentFacadePattern paymentFacadePattern() {
 		return new PaymentFacadePatternImpl();
+		
 	}
 	
 	@Bean
