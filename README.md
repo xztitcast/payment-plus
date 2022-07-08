@@ -26,11 +26,11 @@ public class AlibabaPaymentAppController {
 }
 
 #相关支付实现类(可以直接将单独的支付实现接口直接注入到service业务层中)
-AlibabaPaymentAppServiceImpl
-AlibabaPaymentNativedServiceImpl
-AlibabaPaymentWebServiceImpl
-WechatPaymentAppletServiceImpl
-WechatPaymentAppServiceImpl
-WechatPaymentH5ServiceImpl
-WechatPaymentNativedServiceImpl
-WechatPaymentPublicNumServiceImpl
+#AlibabaPaymentAppServiceImpl
+#AlibabaPaymentNativedServiceImpl
+#AlibabaPaymentWebServiceImpl
+#WechatPaymentAppletServiceImpl
+#WechatPaymentAppServiceImpl
+#WechatPaymentH5ServiceImpl
+#WechatPaymentNativedServiceImpl
+#WechatPaymentPublicNumServiceImpl
