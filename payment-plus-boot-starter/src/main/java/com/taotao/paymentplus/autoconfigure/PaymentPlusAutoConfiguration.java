@@ -22,8 +22,6 @@ import com.taotao.paymentplus.core.facade.PaymentFacadePatternImpl;
  * 支付增强自动组件入口
  * 如不用Spring容器作为为Bean工厂,需要额外单独实现
  * 如不依赖Spring容器 PaymentFacadePattern对外接口需要构建PaymentPlusProperties相应的配置
- * 如不使用提供的PaymentFacadePattern外观接口,可以在Spring项目中使用DI依赖单独注入对应的支付实现即可，例如:
- * private 
  * @author eden
  *
  */
