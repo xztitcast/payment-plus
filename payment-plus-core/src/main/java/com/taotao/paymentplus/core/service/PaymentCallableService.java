@@ -19,5 +19,5 @@ public interface PaymentCallableService {
 	 * @param request
 	 * @return
 	 */
-	Map<String, String> callable(HttpServletRequest request);
+	Map<String, String> callable(HttpServletRequest request) throws Exception;
 }

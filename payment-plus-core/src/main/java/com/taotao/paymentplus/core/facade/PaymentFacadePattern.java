@@ -23,6 +23,6 @@ public interface PaymentFacadePattern {
 	 * @param param
 	 * @return
 	 */
-	public Map<String, String> callback(FacadeParam param);
+	public Map<String, String> callback(FacadeParam param)throws Exception;
 	
 }
