@@ -14,11 +14,13 @@
       	<artifactId>spring-boot-autoconfigure</artifactId>
       	<scope>compile</scope>
     </dependency>
+    <!-- 使用JDK8该JAR包可以不用依赖 -->
   	<dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
         <scope>compile</scope>
     </dependency>
+    <!-- 使用JDK8该JAR包可以不用依赖 -->
     <dependency>
 	  <groupId>org.glassfish.jaxb</groupId>
 	  <artifactId>jaxb-runtime</artifactId>
