@@ -32,9 +32,14 @@ public class AlibabaPaymentWebServiceImpl extends AlibabaPaymentSupport implemen
 	}
 
 	@Override
-	public Map<String, String> callable(HttpServletRequest request)throws Exception {
+	public Map<String, String> callable(HttpServletRequest request) {
 		Map<String,String> parse = super.parse(request.getParameterMap());
-		boolean check = AlipaySignature.rsaCheckV1(parse, configuration.getAlipayPublicKey(), configuration.getCharset(), configuration.getSignType());
+		boolean check = false;
+		try {
+			check = AlipaySignature.rsaCheckV1(parse, configuration.getAlipayPublicKey(), configuration.getCharset(), configuration.getSignType());
+		} catch (AlipayApiException e) {
+			log.error("支付宝浏览器页面支付回调异常", e);
+		}
 		if(check) {
 			return parse;
 		}
