@@ -39,7 +39,6 @@ public class PaymentFacadePatternImpl implements PaymentFacadePattern, Applicati
 	public Map<String, String> callback(FacadeParam param)throws Exception {
 		Assert.notNull(param.getRequest(), "HttpServletRequest is not null");
 		PaymentService bean = applicationContext.getBean(param.getName(), param.getCls());
-		bean.callable(param.getRequest());
-		return null;
+		return bean.callable(param.getRequest());
 	}
 }
