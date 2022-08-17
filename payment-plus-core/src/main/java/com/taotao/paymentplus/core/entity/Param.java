@@ -134,9 +134,10 @@ public class Param {
 			return builder;
 		}
 		
-		public Builder select(String args) {
+		public static Builder select(String args) {
 			return Selector.valueOf(args).getBuilder();
 		}
+		
 	}
 	
 	public static class Builder {
