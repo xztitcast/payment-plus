@@ -8,6 +8,7 @@ import com.taotao.paymentplus.core.service.PaymentService;
 import com.taotao.paymentplus.core.service.impl.AlibabaPaymentAppServiceImpl;
 import com.taotao.paymentplus.core.service.impl.AlibabaPaymentNativedServiceImpl;
 import com.taotao.paymentplus.core.service.impl.AlibabaPaymentWebServiceImpl;
+import com.taotao.paymentplus.core.service.impl.WechatPaymentAppServiceImpl;
 import com.taotao.paymentplus.core.service.impl.WechatPaymentAppletServiceImpl;
 import com.taotao.paymentplus.core.service.impl.WechatPaymentH5ServiceImpl;
 import com.taotao.paymentplus.core.service.impl.WechatPaymentNativedServiceImpl;
@@ -107,14 +108,19 @@ public class Param {
 		 * 支付宝浏览器页面
 		 */
 		A_WEB(new Builder("alibabaPaymentWebServiceImpl", AlibabaPaymentWebServiceImpl.class)),
-		/**
-		 * 微信APP
-		 */
-		W_APP(new Builder("wechatPaymentAppletServiceImpl", WechatPaymentAppletServiceImpl.class)),
+		
 		/**
 		 * 微信H5
 		 */
 		W_H5(new Builder("wechatPaymentH5ServiceImpl", WechatPaymentH5ServiceImpl.class)),
+		/**
+		 * 微信APP
+		 */
+		W_APP(new Builder("wechatPaymentAppServiceImpl", WechatPaymentAppServiceImpl.class)),
+		/**
+		 * 微信小程序
+		 */
+		W_APPLET(new Builder("wechatPaymentAppletServiceImpl", WechatPaymentAppletServiceImpl.class)),
 		/**
 		 * 微信扫码
 		 */
