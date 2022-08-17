@@ -133,6 +133,10 @@ public class Param {
 		public Builder getBuilder() {
 			return builder;
 		}
+		
+		public Builder select(String args) {
+			return Selector.valueOf(args).getBuilder();
+		}
 	}
 	
 	public static class Builder {
